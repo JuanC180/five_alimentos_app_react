@@ -1,0 +1,123 @@
+
+.section__contacto{}
+.section__contacto__contenedor{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    box-shadow: 5px 7px 60px  rgb(209, 209, 209);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    grid:40px;
+
+}
+@media (width > 720px){
+    .section__contacto__contenedor{
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        box-shadow: 16px 16px 30px rgb(209, 209, 209);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+.section__contacto__imagen{
+    /* background-image: url(../img/asesor.jpg); */
+    background-image: url(../../../assets/img/asesor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@media (width > 720px){
+    .section__contacto__imagen{
+        background-position: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
+.section__contacto__formulario{
+    padding: 30px;
+}
+@media(width > 720px){
+    .section__contacto__formulario{
+        border-top-right-radius: 10px;
+
+    }
+}
+
+.section__contacto__titulo-principal{
+
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+    font-size: var(--titulo-secundario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(width < 400px){
+    .section__contacto__titulo-principal{
+        font-size: 40px;
+    }
+}
+
+.btn-enviar{
+    height: 50px;
+    background-color: rgba(75, 136, 50, 0.685);
+    border-color: rgba(75, 136, 50, 0.685) !important;
+}
+.btn-enviar:active{
+    background-color: rgba(75, 136, 50, 0.685) !important;
+}
+.btn-enviar:focus-visible{
+    background-color: rgba(75, 136, 50, 0.685);
+}
+.btn-enviar:hover{
+    background-color: rgba(60, 94, 47, 0.685);
+}
+
+.btn-margin{
+    margin-top: 10px;
+}
+
+
+.tbn-whatsapp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+}
+
+.tbn-whatsapp:hover{
+    background-color: #1c723c;
+}
+
+.tbn-whatsapp__texto{}
+
+.tbn-whatsapp__icono{
+    width: 50px;
+    height: 50px;
+    /* background-image: url(../img/whatsapp.svg); */
+    background-size:cover;
+}
+
+.tbn-whatsapp__icono:hover{
+    cursor: pointer;
+}
