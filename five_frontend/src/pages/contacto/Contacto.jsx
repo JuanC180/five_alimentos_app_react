@@ -1,8 +1,12 @@
+import { useState } from "react"
+
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import '../../assets/css/bootstrap.min.css'
 import '../contacto/css/contacto.css'
-import { useState } from "react"
+
+import swal from 'sweetalert';
+
 
 const Contacto =  () => {
 
@@ -17,29 +21,87 @@ const Contacto =  () => {
         if([nombre,correo,telefono,comentario].includes(''))
         {
             console.log("No pueden haber campos vacios")
+
+            swal({
+                // title: "Advertencia",
+                title: "Todos los campos son obligatorios!",
+                icon: "warning",
+                // confirmButtonColor: "#000",
+                // buttonColor:"#000",
+                button: "Aceptar"
+              });
             return
         }
-        console.log("Enviando datos")
+        // console.log("Enviando datos")
 
-        const url = '127.0.0.1:4000/api/v1/contactos/contacto'
+        const url = 'http://127.0.0.1:4000/api/v1/contactos/contacto'
 
-        fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
+        const objDatos = {
+            nombre,
+            correo,
+            telefono,
+            comentario
+        }
+
+        
+        // const formData = new FormData()
+        
+        // formData.append('nombre', nombre)
+        // formData.append('correo', correo)
+        // formData.append('telefono', telefono)
+        // formData.append('comentario', comentario)
+        // formData.append('nuevoObjetoDatos', JSON.stringify(objDatos))
+        
+        // console.log(formData)
+        // console.log(objDatos)
+
+        fetch(url, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(objDatos)
         })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error(error); // Manejar errores de la solicitud fetch
-        })
-        .catch(() => {
-            // Si la respuesta no es JSON, puedes manejarla de otra manera
-            console.log("La respuesta no es un JSON válido. Podría ser HTML u otro tipo de contenido.");
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                // Limpia los campos del formulario después de enviar con éxito
+                setNombre('');
+                setCorreo('');
+                setTelefono('');
+                setComentario('');
+
+                swal({
+                    // title: "Advertencia",
+                    title: "Se han envido los dato correctamente!",
+                    icon: "success",
+                    button: "Aceptar"
+                  });
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+        // fetch(url)
+        // .then(response => {
+        //     if (!response.ok) {
+        //         throw new Error(`HTTP error! status: ${response.status}`);
+        //     }
+        //     return response.json();
+        // })
+        // .then(data => {
+        //     console.log(data);
+        // })
+        // .catch(error => {
+        //     console.error(error); 
+        // })
+        // .catch(() => {
+        //     // Si la respuesta no es JSON, puedes manejarla de otra manera
+        //     console.log("La respuesta no es un JSON válido. Podría ser HTML u otro tipo de contenido.");
+        // });
     }
 
     return(

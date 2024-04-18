@@ -21,7 +21,9 @@ const getContacto = (req, res) => {
 };
 
 const addContacto = (req, res) => {
-    // res.json("Metodo Post")
+
+    // console.log(req.body)
+
     newContacto(req.body)
         .then(result =>{
             res.json(result)
