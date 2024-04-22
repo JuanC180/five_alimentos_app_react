@@ -1,11 +1,11 @@
 import { useState } from "react"
+import swal from 'sweetalert';
 
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import '../../assets/css/bootstrap.min.css'
 import '../contacto/css/contacto.css'
 
-import swal from 'sweetalert';
 
 
 const Contacto =  () => {
@@ -15,7 +15,7 @@ const Contacto =  () => {
     const [telefono, setTelefono]     = useState('')
     const [comentario, setComentario] = useState('')
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) =>{
         e.preventDefault()
         
         if([nombre,correo,telefono,comentario].includes(''))
@@ -26,15 +26,14 @@ const Contacto =  () => {
                 // title: "Advertencia",
                 title: "Todos los campos son obligatorios!",
                 icon: "warning",
-                // confirmButtonColor: "#000",
-                // buttonColor:"#000",
                 button: "Aceptar"
               });
             return
         }
         // console.log("Enviando datos")
 
-        const url = 'http://127.0.0.1:4000/api/v1/contactos/contacto'
+        // const url = 'http://127.0.0.1:4000/api/v1/contactos'
+        const url = `${import.meta.env.VITE_URL_BASE}api/v1/contactos`
 
         const objDatos = {
             nombre,
@@ -43,7 +42,6 @@ const Contacto =  () => {
             comentario
         }
 
-        
         // const formData = new FormData()
         
         // formData.append('nombre', nombre)
@@ -55,19 +53,18 @@ const Contacto =  () => {
         // console.log(formData)
         // console.log(objDatos)
 
-        fetch(url, {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(objDatos)
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
+        try {
+            const res = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(objDatos)
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+
                 console.log(data);
+
                 // Limpia los campos del formulario después de enviar con éxito
                 setNombre('');
                 setCorreo('');
@@ -75,33 +72,42 @@ const Contacto =  () => {
                 setComentario('');
 
                 swal({
-                    // title: "Advertencia",
-                    title: "Se han envido los dato correctamente!",
+                    title: "Se han enviado los datos correctamente!",
                     icon: "success",
                     button: "Aceptar"
-                  });
-            })
-            .catch(error => {
-                console.log(error)
-            })
+                });
+            } else {
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
+        } catch (error) {
+            console.error('Ocurrió un error:', error);
+        }
 
-        // fetch(url)
-        // .then(response => {
-        //     if (!response.ok) {
-        //         throw new Error(`HTTP error! status: ${response.status}`);
-        //     }
-        //     return response.json();
-        // })
-        // .then(data => {
-        //     console.log(data);
-        // })
-        // .catch(error => {
-        //     console.error(error); 
-        // })
-        // .catch(() => {
-        //     // Si la respuesta no es JSON, puedes manejarla de otra manera
-        //     console.log("La respuesta no es un JSON válido. Podría ser HTML u otro tipo de contenido.");
-        // });
+            // .then(response => {
+            //     if (!response.ok) {
+            //         throw new Error(`HTTP error! status: ${response.status}`);
+            //     }
+            //     return response.json();
+            // })
+            // .then(data => {
+            //     console.log(data);
+            //     // Limpia los campos del formulario después de enviar con éxito
+            //     setNombre('');
+            //     setCorreo('');
+            //     setTelefono('');
+            //     setComentario('');
+
+            //     swal({
+            //         // title: "Advertencia",
+            //         title: "Se han envido los dato correctamente!",
+            //         icon: "success",
+            //         button: "Aceptar"
+            //       });
+            // })
+            // .catch(error => {
+            //     console.log(error)
+            // })
+
     }
 
     return(
@@ -120,7 +126,7 @@ const Contacto =  () => {
                 </div>
 
                 <section className="section__contacto">
-                    <h2 className="section__contacto__titulo-principal">Contactanos</h2>
+                    <h2 className="section__contacto__titulo-principal">Contáctanos</h2>
                     <div className="section__contacto__contenedor ">
                         <div className="section__contacto__imagen">
                             

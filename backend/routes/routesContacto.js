@@ -8,8 +8,8 @@ import {
 
 const router = express.Router();
 
-router.get('/contacto', getContacto)
-router.get('/contacto/:id', getContactoOne)
-router.post('/contacto', addContacto)
+router.get('/contactos', getContacto)
+router.get('/contactos/:id', getContactoOne)
+router.post('/contactos', addContacto)
 
 export default router
