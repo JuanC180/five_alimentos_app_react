@@ -15,7 +15,7 @@
     }
 }
 .mision__imagen__uno{
-    background-image: url(../img/quienes_somo1.jpg);
+    background-image: url(../../../assets/img/quienes_somo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,7 +87,7 @@
     }
 }
 .mision__imagen__dos{
-    background-image: url(../img/historia2.jpg);
+    background-image: url(../../../assets/img/historia2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,7 +98,7 @@
 
 @media(min-width:720px){
     .mision__imagen__dos{
-        background-image: url(../img/historia2.jpg);
+        background-image: url(../../../assets/img/historia2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -158,7 +158,7 @@
         }
     }
     .mision__imagen__dos{
-        background-image: url(../img/historia2.jpg);
+        background-image: url(../../../assets/img/historia2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
