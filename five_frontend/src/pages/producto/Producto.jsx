@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
+import ProductCard from '../../components/ProductCard/ProductCard'
 
-// import '../../pages/producto/css/producto.css'
+import '../../pages/producto/css/producto.css'
 // import '../../assets/css/style.css'
-
 import  imgUno from '../../assets/img/1.jpg'
 import  imgDos from '../../assets/img/2.jpg'
 import  imgTres from '../../assets/img/3.webp'
@@ -14,9 +14,61 @@ import  imgSeis from '../../assets/img/6.jpg'
 import  imgSiete from '../../assets/img/7.avif'
 import  imgOcho from '../../assets/img/8.avif'
 
+
 const Producto = () => {
+    const products = [
+        {
+            title: "Producto 1",
+            img: imgUno,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas',
+            price: 1200
+        },
+        {
+            title: "Producto 2",
+            img: imgDos,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas',
+            price: 1200
+        },
+        {
+            title: "Producto 3",
+            img: imgTres,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas 3',
+            price: 1200 
+        },
+        {
+            title: "Producto 4",
+            img: imgCuatro,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas 4',
+            price: 1200
+        },
+        {
+            title: "Producto 5",
+            img: imgCinco,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas 5',
+            price: 1200
+        },
+        {
+            title: "Producto 6",
+            img: imgSeis,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas 6',
+            price: 1200
+        },
+        {
+            title: "Producto 7",
+            img: imgSiete,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas 7',
+            price: 1200
+        },
+        {
+            title: "Producto 8",
+            img: imgOcho,
+            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas 8',
+            price: 1200
+        }
+    ]
   return (
     <>
+    
       <Header />
 
 
@@ -35,137 +87,19 @@ const Producto = () => {
               <section className="section__productos">
                   <div className="contenedor">
                       <h2 className="section__producto-titulo">Productos</h2>
-                      <div className="contenedor_cards">
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgUno} alt="producto-1" />
-                              </div>
-                              
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgDos} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgTres} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgCuatro} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgCinco} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgSeis} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgSiete} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div>
-
-                          <div className="card">
-                              <div className="card__imagen">
-                                  <img src={imgOcho} alt="producto-1" />
-                              </div>
-
-                              <div className="card__texto">
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                      Unde ea quia nulla ipsa. Nesciunt magnam dolor incidunt quas
-                              </div>
-
-                              <div className="card__precio">
-                                  <span className="card__precio-signo">$</span> 1,200
-                              </div>
-                          </div> 
-
-
-
-
-
+                      
+                     
+                    <div className='contenedor_cards'>
+                            {products.map((product, index) => (
+                                <ProductCard key={index} product={product} />
+                            ))}
                       </div>
+                         
+                      
                   </div>
               </section>
-
-              <div className="tbn-whatsapp">
+                
+                <div className="tbn-whatsapp">
                   <a href="https://api.whatsapp.com/send/?phone=573153646529&text=Holaa estoy interezado en el producto&type=phone_number&app_absent=0" target="_blank">
                       <div className="tbn-whatsapp__icono "></div>
                   </a>

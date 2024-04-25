@@ -1,8 +1,9 @@
 // import '../assets/css/style.css'
-import logoFooter from '../assets/img/logo.png'
-import logoFacebook from '../assets/img/logo_facebook.png'
-import logoInstagram from '../assets/img/logo_instagram.png'
-import logoX from '../assets/img/logo_x2.png'
+import logoFooter from '../../assets/img/logo.png'
+import logoFacebook from '../../assets/img/logo_facebook.png'
+import logoInstagram from '../../assets/img/logo_instagram.png'
+import logoX from '../../assets/img/logo_x2.png'
+import '../Footer/css/Footer.css'
 
 
 const Footer = () => {

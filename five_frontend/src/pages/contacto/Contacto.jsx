@@ -1,9 +1,9 @@
 import { useState } from "react"
 import swal from 'sweetalert';
 
-import Footer from "../../components/Footer"
-import Header from "../../components/Header"
-import '../../assets/css/bootstrap.min.css'
+import Footer from "../../components/Footer/Footer"
+import Header from "../../components/Header/Header"
+// import '../../assets/css/bootstrap.min.css'
 import '../contacto/css/contacto.css'
 
 
@@ -136,39 +136,39 @@ const Contacto =  () => {
                             <form action="" 
                                 onSubmit={handleSubmit}
                             >
-                                <div className="mb-2">
-                                    <input 
+                                <div className="div-c">
+                                    <input required
                                         type="text" 
-                                        className="form-control" 
+                                        className="input-c" 
                                         id="nombre" 
                                         placeholder="Nombres" 
                                         value={nombre}
                                         onChange={e => setNombre(e.target.value)}
                                     />
                                 </div>
-                                <div className="mb-2">
-                                    <input 
+                                <div className="div-c">
+                                    <input required
                                         type="email" 
-                                        className="form-control" 
+                                        className="input-c" 
                                         id="correo" 
                                         placeholder="Correo"
                                         value={correo}
                                         onChange={(e)=> setCorreo(e.target.value)} 
                                     />
                                 </div>
-                                <div className="mb-2">
-                                    <input 
+                                <div className="div-c">
+                                    <input required
                                         type="number" 
-                                        className="form-control" 
+                                        className="input-c" 
                                         id="telefono" 
                                         placeholder="Teléfono" 
                                         value={telefono}
                                         onChange={e => setTelefono(e.target.value)}
                                     />
                                 </div>
-                                <div className="mb-2">
+                                <div className="div-c">
                                     <textarea 
-                                        className="form-control" 
+                                        className="text-container" 
                                         id="comentario" 
                                         rows="4" 
                                         placeholder="Comentario"
@@ -176,7 +176,7 @@ const Contacto =  () => {
                                         onChange={e => setComentario(e.target.value)}
                                     ></textarea>
                                 </div>
-                                <div className="d-grid gap-2">
+                                <div className="container-bt">
                                     <button className="btn btn-primary btn-enviar btn-margin" type="submit">Enviar</button>
                                 </div>
                             </form>

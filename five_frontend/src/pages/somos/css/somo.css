@@ -1,0 +1,242 @@
+
+.banner__somo{
+
+}
+.mision__uno{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+}
+@media (min-width:720px){
+    .mision__uno{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+    }
+}
+.mision__imagen__uno{
+    background-image: url(../img/quienes_somo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.mision__texto__uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.mision__texto__subtitulo__uno{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+    font-size: var(--titulo-secundario-movil);
+    
+}
+@media(min-width:520px){
+    .mision__texto__subtitulo__uno{
+        margin-bottom: 50px;
+        font-family: var(--fuente-principal);
+        font-weight: 900;
+        font-size: var(--titulo-secundario);
+    }
+}
+@media(min-width:720px){
+    .mision__texto__subtitulo__uno{
+        margin-bottom: 50px;
+        font-family: var(--fuente-principal);
+        font-weight: 900;
+        font-size: var(--titulo-secundario);
+    }
+}
+
+.mision__texto__texto__uno, 
+.mision__texto__texto__dos {
+    font-family: var(--fuente-secundaria);
+    font-weight: 400;
+    text-align: justify;
+    font-size: var(--fuente-size);
+
+}
+
+.mision__span, 
+.vision__span{
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    font-size: var(--fuente-size);
+    color: gray;
+}
+
+
+/*  === */
+
+
+.mision__dos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+}
+@media (min-width:720px){
+    .mision__dos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+    }
+}
+.mision__imagen__dos{
+    background-image: url(../img/historia2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+@media(min-width:720px){
+    .mision__imagen__dos{
+        background-image: url(../img/historia2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        grid-row: 1/2;
+        grid-column: 2/-1;
+    }
+}
+.mision__texto__dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.mision__texto__subtitulo__dos{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+    font-size: var(--titulo-secundario-movil);
+    
+}
+@media(min-width:520px){
+    .mision__texto__subtitulo__dos{
+        margin-bottom: 50px;
+        font-family: var(--fuente-principal);
+        font-weight: 900;
+        font-size: var(--titulo-secundario);
+    }
+}
+@media(min-width:720px){
+    .mision__texto__subtitulo__dos{
+        margin-bottom: 50px;
+        font-family: var(--fuente-principal);
+        font-weight: 900;
+        font-size: var(--titulo-secundario);
+    }
+}
+
+
+
+
+
+
+@media( min-width:720px){
+    .mision__dos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+    @media (min-width:720px){
+        .mision__dos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px;
+        }
+    }
+    .mision__imagen__dos{
+        background-image: url(../img/historia2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+    .mision__texto__dos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mision__texto__subtitulo__dos{
+        margin-bottom: 50px;
+        margin-top: 30px;
+        font-family: var(--fuente-principal);
+        font-weight: 900;
+        font-size: var(--titulo-secundario-movil);
+        
+    }
+    @media(min-width:520px){
+        .mision__texto__subtitulo__dos{
+            margin-bottom: 50px;
+            font-family: var(--fuente-principal);
+            font-weight: 900;
+            font-size: var(--titulo-secundario);
+        }
+    }
+    @media(min-width:720px){
+        .mision__texto__subtitulo__dos{
+            margin-bottom: 50px;
+            font-family: var(--fuente-principal);
+            font-weight: 900;
+            font-size: var(--titulo-secundario);
+        }
+    }
+}
+
+.mision__texto__texto__uno, 
+.mision__texto__texto__dos {
+    font-family: var(--fuente-secundaria);
+    font-weight: 400;
+    text-align: justify;
+    font-size: var(--fuente-size);
+
+}
+
+.mision__span, 
+.vision__span{
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    font-size: var(--fuente-size);
+    color: gray;
+}
+
+.section__valores{
+    padding: 60px 0;
+    background-color: rgba(231, 228, 224, 0.507);
+}
+.section__valores__contenedor{}
+.section__valores__titulo{
+    
+    font-family: var(--fuente-principal);
+    font-size: var(--titulo-secundario);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section__valores__texto{
+    font-family: var(--fuente-secundaria);
+    font-size: var(--fuente-size);
+}
+.section__valores__parrafo{
+    margin: 0;
+    margin-bottom: 20px;
+}
+@media (min-width:720px){
+    .section__valores__parrafo{
+        margin: 0;
+    }
+}

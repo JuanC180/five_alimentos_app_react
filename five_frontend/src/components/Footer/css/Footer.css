@@ -1,0 +1,104 @@
+.footer{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+@media(min-width:720px){
+    .footer{
+        background-color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer__logo__img{
+    width: 100px;
+}
+
+.footer__texto{
+    margin-left: 30px;
+    font-size: 12px;
+}
+.footer__iconos{
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(min-width:720px){
+    .footer__iconos{
+        display: flex;
+        gap: 50px;
+        margin-right: 20px;
+    }
+}
+
+.footer__iconos--width{
+    width: 30px;
+}
+@media (min-width:520px){
+    .footer__iconos--width{
+        width: 50px;
+    }
+}
+.footer__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+@media (min-width:720px){
+    .footer__contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+}
+.footer__informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+@media(min-width:720px){
+    .footer__informacion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+    }
+}
+.footer__descripcion--color{
+    color: #fff;
+    text-align: left;
+}
+.footer__descripcion__texto{
+    color: #fff;
+    margin: 0;
+    font-family: var(--fuente-principal);
+    font-size: 15px;
+}
+.footer__copyright{
+    color: #fff;
+    margin: 20px 0;
+    margin-bottom: 0px;
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+}
