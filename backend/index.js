@@ -3,10 +3,12 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 
 import routerContacto from './routes/routesContacto.js'
+import routerProducto from './routes/routesProducto.js'
+import routerPagos from './routes/routesPago.js'
+
 
 const app = express()
 dotenv.config()
-// app.use(cors())
 app.use(express.json())
 app.use(cors())
 
@@ -14,6 +16,8 @@ const PORT = process.env.PORT || 3000
 
 
 app.use('/api/v1', routerContacto)
+app.use('/api/v1', routerProducto)
+app.use('/api/v1', routerPagos)
 
 
 
