@@ -6,10 +6,13 @@ import Header from "../../components/Header/Header"
 // import '../../assets/css/bootstrap.min.css'
 import '../contacto/css/contacto.css'
 
-
-
+let texto = `H\no\nl\na`;
+let textoConSaltosDeLinea = encodeURIComponent(texto.replace(/\n/g, '%20A'));
+let imagen = "https://img.freepik.com/foto-gratis/colores-arremolinados-interactuan-danza-fluida-sobre-lienzo-que-muestra-tonos-vibrantes-patrones-dinamicos-que-capturan-caos-belleza-arte-abstracto_157027-2892.jpg"
+let urlImagenCodificada = encodeURIComponent(imagen);
+const mensajeW = `https://api.whatsapp.com/send/?phone=573143922490&text=${textoConSaltosDeLinea} ${urlImagenCodificada} estoy interezado en el  *producto*&type=phone_number&app_absent=0`
 const Contacto =  () => {
-
+    
     const [nombre, setNombre]         = useState('')
     const [correo, setCorreo]         = useState('')
     const [telefono, setTelefono]     = useState('')
@@ -107,9 +110,9 @@ const Contacto =  () => {
             // .catch(error => {
             //     console.log(error)
             // })
-
+         
     }
-
+   
     return(
         <>
             <Header />
@@ -187,7 +190,7 @@ const Contacto =  () => {
                 </section>
 
                 <div className="tbn-whatsapp">
-                  <a href="https://api.whatsapp.com/send/?phone=573153646529&text=Holaa estoy interezado en el producto&type=phone_number&app_absent=0" target="_blank">
+                  <a href= {mensajeW} target="_blank">
                       <div className="tbn-whatsapp__icono "></div>
                   </a>
               </div>
