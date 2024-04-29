@@ -20,31 +20,11 @@ const Somos = () => {
                 </div>
             </div>
 
-            <section className="mision__uno">
-                <div className="mision__imagen__uno"></div>
-                <div className="mision__texto__uno">
-                    <div className="contenedor">
-                        <h2 className="mision__texto__subtitulo__uno">
-                            Misión y Visión
-                        </h2>
-                        <p className="mision__texto__texto__uno">
-                            <span className="colorGris--texto">Misión: </span> a mano estos alimentos no solo te ahorrará tiempo, 
-                            sino que harán que sea mucho más fácil comer los alimentos adecuados
-                        </p>
-                        <p className="mision__texto__texto__dos">
-                            <span className="colorGris--texto">Visión: </span>Comer bien no siempre es fácil o divertido. En el programa de televisión 'Consumer 101', 
-                            la experta de Consumer Reports, Amy Keating, se dirige a la tienda de comestibles para mostrarles 
-                            cómo tomar decisiones saludables cuando se trata de los alimentos.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
 
             <section className="mision__dos">
                
                 <div className="mision__texto__dos">
-                    <div className="contenedor">
+                    <div className="contenedor1">
                         <h2 className="mision__texto__subtitulo__dos">
                             ¿Quienes somos?
                         </h2>
@@ -60,33 +40,60 @@ const Somos = () => {
                 </div>
                  <div className="mision__imagen__dos"></div>
             </section>
+            <section className="mision__uno">
+                
+                <div className="mision__texto__uno">
+                    <div className="mision__imagen__uno"></div>
+                        <div className="contenedor4">
+                        <h2 className="mision__texto__subtitulo__uno">
+                            Misión
+                        </h2>
+                        <p className="mision__texto__texto__uno">
+                        Nos dedicamos a satisfacer las necesidades gastronómicas con una amplia oferta con un concepto de comida empacada para una preparación rápida y fácil.y fabricación de salsas de manera artesanal  con el fin de hacerle la cocina más fácil a nuestros clientes  y a través de ella transmitir una experiencia única.
+                        </p>
+                        </div>
+                    </div>
+                <div className='mision__texto__tres'>
+                    <div className="mision__imagen__tres"></div>
+                    <div className="contenedor2">
+                        <h2 className="mision__texto__subtitulo__tres">
+                            Visión
+                        </h2>
+                        <p className="mision__texto__texto__tres">
+                        Movernos hacia un futuro en el sector alimentos llevando una experiencia deliciosa e innovadora con productos de alta calidad ,nutritivos aumentando así el consumo y preferencia de nuestros clientes creando así una manera fácil de alimentarse .
+                        Queriendo cada día mejorar para poder expandir la empresa no solo a nivel regional sino nacional logrando cautivar cada vez el mercado de una manera innovadora.
 
-            <section className="section__valores">
+
+                        </p>
+                    
+                    
+                    </div>
+                </div>
+                
+            </section>
+
+            <section className="section__valores_contenedor">
 
                 <div className="section__valores__contenedor contenedor">
                     <div className="section__valores__titulo">
                         Valores
                     </div>
-                    <div className="section__valores__texto">
-                        <p className="section__valores__parrafo">
-                            <span className="colorGris--texto">Responsabilidad:</span> Cumplimos las obligaciones con proveedores, clientes, consumidores y la comunidad.
-                        </p>
-                        <p className="section__valores__parrafo">
-                            <span className="colorGris--texto">Confianza:</span> Ofrecemos seguridad y firmeza en nuestro actuar.
-                        </p>
-                        <p className="section__valores__parrafo">
-                            <span className="colorGris--texto">Calidad:</span> Nuestros productos suplen las necesidades y expectativas de nuestros clientes y consumidores.
-                        </p>
-                        <p className="section__valores__parrafo">
-                            <span className="colorGris--texto">Respeto:</span> Nos preocupamos por que nuestras acciones tengan un impacto positivo que incluyan y acepten a los demás en sus diferencias.
-                        </p>    
-                        <p className="section__valores__parrafo">
-                            <span className="colorGris--texto">Innovación:</span> Buscamos la innovación constante que marque la diferencia en nuestra propuesta de valor.
-                        </p>
-                        <p className="section__valores__parrafo">
-                            <span className="colorGris--texto">Trabajo en Equipo:</span> Trabajamos organizadamente como uno solo para brindar soluciones efectivas.
-                        </p>
-                    </div>
+                    <div className="Iconos">
+                        
+                        <div className='Icono'>
+                            <div className='Icono_imagen2'></div>
+                            <h3 className='Icono__titulo'>Trabajo En Equipo</h3>   
+                        </div>
+                        <div className='Icono'>
+                            <div className='Icono__imagen1'></div>
+                            <h3 className='Icono__titulo'>Calidad</h3>   
+                        </div>
+                        <div className='Icono'>
+                            <div className='Icono_imagen3'></div>
+                            <h3 className='Icono__titulo'>Innovación</h3>
+                          
+                        </div>
+                        </div>  
                 </div>
             </section>
 
