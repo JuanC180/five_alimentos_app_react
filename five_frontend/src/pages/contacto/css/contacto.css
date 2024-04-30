@@ -1,15 +1,22 @@
-.section__contacto{}
+.section__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #003a1520;
+    padding: 2rem 0;
+
+}
 .section__contacto__contenedor{
     max-width: 1200px;
     width: 80%;
     margin: 0 auto;
-
+    background-color: #ffffffe1;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(1, 1fr);
     box-shadow: 5px 7px 60px  rgb(209, 209, 209);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 2rem;
     margin-top: 40px;
     margin-bottom: 60px;
     grid:40px;
@@ -28,7 +35,7 @@
     }
 }
 .section__contacto__imagen{
-    background-image: url(../../../assets/img/asesor.jpg);
+    background-image: url(../../../assets/img/imagenesfive/five4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,13 +65,16 @@
 }
 
 .section__contacto__titulo-principal{
-
+    border-radius: 1rem;
+    background-color: #ffffffcc;
     font-family: var(--fuente-principal);
     font-weight: 900;
     font-size: var(--titulo-secundario);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 1rem;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.316);
 }
 
 @media(width < 400px){

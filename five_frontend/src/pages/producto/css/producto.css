@@ -5,8 +5,10 @@
     align-items: center;
     align-content: center;
     width: 100%;
-
-    background-color: rgba(0, 0, 0, 0.055);
+    margin-top: -3rem;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.411);
 
 }
 .categorys{
@@ -57,6 +59,7 @@
     height: 100%;
     background-color: #3a3737;
     z-index: 0;
+    opacity: 0.8;
 }
 
 .category:hover{
@@ -64,7 +67,7 @@
 }
 
 .section__productos{
-    background-color: #f5f3ea;
+    background-color:  #003a1520;
     padding-bottom: 50px;
     width: 100%;
     overflow: hidden;
@@ -80,6 +83,15 @@
     padding: 30px 0 10px 0;
 
 }
+.large{
+    background-color: #31bb16;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.548);
+}
 .large::before,
 .large::after{
     content: "";
@@ -88,6 +100,13 @@
     width: 100%;
     height: 1px;
     background-color: #26721ca6;
+}
+.short{
+    background-color: #31bb16;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.548);
 }
 .short::before,
 .short::after{
@@ -129,6 +148,9 @@
 
 .contenedor_cards{
     display: grid;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);
     gap:10px;
     justify-content: center;
     justify-items: stretch;

@@ -53,7 +53,7 @@ const Somos = () => {
                             Misión
                         </h2>
                         <p className="mision__texto__texto__uno">
-                        Nos dedicamos a satisfacer las necesidades gastronómicas con una amplia oferta con un concepto de comida empacada para una preparación rápida y fácil.y fabricación de salsas de manera artesanal  con el fin de hacerle la cocina más fácil a nuestros clientes  y a través de ella transmitir una experiencia única.
+                        Nos dedicamos a satisfacer las necesidades gastronómicas con una amplia oferta con un concepto de comida empacada para una preparación rápida y fácil. Y fabricación de salsas de manera artesanal  con el fin de hacerle la cocina más fácil a nuestros clientes  y a través de ella transmitir una experiencia única.
                         </p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Somos = () => {
                             Visión
                         </h2>
                         <p className="mision__texto__texto__tres">
-                        Movernos hacia un futuro en el sector alimentos llevando una experiencia deliciosa e innovadora con productos de alta calidad ,nutritivos aumentando así el consumo y preferencia de nuestros clientes creando así una manera fácil de alimentarse .
+                        Movernos hacia un futuro en el sector alimentos llevando una experiencia deliciosa e innovadora con productos de alta calidad, nutritivos aumentando así el consumo y preferencia de nuestros clientes creando así una manera fácil de alimentarse.
                         Queriendo cada día mejorar para poder expandir la empresa no solo a nivel regional sino nacional logrando cautivar cada vez el mercado de una manera innovadora.
 
 
