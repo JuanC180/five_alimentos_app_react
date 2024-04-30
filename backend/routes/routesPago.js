@@ -12,7 +12,7 @@ const router = express.Router();
 
 // productos
 router.get('/pagos', demoCarritoPay)
-router.get('/pagos/create-checkout', demoCreate)
+router.get('/pagos/create-checkout-session', demoCreate)
 router.get('/pagos/success', demoSuccess)
 router.get('/pagos/cancel', demoCancel)
 

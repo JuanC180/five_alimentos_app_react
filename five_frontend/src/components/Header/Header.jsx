@@ -1,15 +1,15 @@
 import { Link, NavLink } from 'react-router-dom'
 // import '../assets/css/style.css'
 import '../Header/css/Header.css'
-import logo from '../../assets/img/logo.png'
-import iconoMenu from '../../assets/img/menu.png'
+import logo from '../../assets/img/logocircular.png'
+import iconoMenu from '../../assets/img/menu-50.png'
 
 const Header = () => {
   return (
     <>
         <div className="wrapp">
             <header className="header">            
-                <div className="contenedor">
+                <div className="header__contenedor">
                     <nav className="nav">
                         
                         <div className="nav__logo">

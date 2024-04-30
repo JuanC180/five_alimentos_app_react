@@ -3,7 +3,7 @@
 
 
 :root{
-    --titulo-principal: 5rem;
+    --titulo-principal: 4.5rem;
     --titulo-secundario: 3.2rem;
     --titulo-terciario: 2.5rem;
 
@@ -17,7 +17,8 @@
     --titulo-secundario-movil: 2.2rem;
     --titulo-terciario-movil: 1.5rem;
 
-    --active: rgb(10, 168, 10);
+    /* --active: rgb(10, 168, 10); */
+    --active: rgb(138 185 138);
 }
 
 body{
@@ -33,6 +34,159 @@ body{
     box-sizing:border-box;
 }
 
+
+.section__card__imagen{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    border: 5px solid #565E4F;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.section__uno{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+}
+/* =================== SLIDER =========================== */
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top:50px ;
+}
+
+.slider-box{
+    width: 99vw;
+    height: 700px;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+
+@media (width < 720px){
+    .slider-box{
+
+        height: 600px;
+    }
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    overflow: hidden;
+    animation: slide 20s infinite linear;
+
+    height: 600px;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 120px;
+    color: #fff;
+}
+
+.texto h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+
+}
+/* 
+
+import slider1 from '../assets/img/alimentos_empacados.jpg'
+import slider2 from '../assets/img/carne2.png'
+import slider3 from '../assets/img/presentacion_salsa2.png'
+
+*/
+.imgBanner1{
+    background-image: url(../img/alimentos_empacados.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.imgBanner2{
+    background-image: url(../img/presentacion_salsa2.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* object-fit:cover; */
+}
+.imgBanner3{
+    background-image: url(../img/imgBanner.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* object-fit:cover; */
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: 0; }
+    30% { margin-left: -100%; }
+    55% { margin-left: -100%; }
+    60% { margin-left: -200%; }
+    85% { margin-left: -200%; }
+    100% { margin-left: 0; } /* Vuelve suavemente al inicio */
+}
+
+
+@media(max-width:991px){
+
+    .slider-box{
+        width: 100%;
+    }
+}
+
+/* =================== SLIDER END =========================== */
+
+.section__card__contenedor_img{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-bottom: 30px; */
+}
+
+.section__video__multimedia{
+    width: 100%;
+}
+
+.section__texto__subtitulo__multimedia{
+    margin-top: 120px;
+    font-size: 50px;
+}
+@media (width < 480px){
+    .section__texto__subtitulo__multimedia{
+        font-size: 30px;
+    }
+}
+.section__texto__span{
+    display: block;
+    color: #685E6E;
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
 
 /* ==================== BOTON DE WHATSAPP ================================================= */
 
