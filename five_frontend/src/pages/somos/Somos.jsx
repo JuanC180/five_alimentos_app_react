@@ -29,11 +29,15 @@ const Somos = () => {
                             ¿Quienes somos?
                         </h2>
                         <p className="mision__texto__texto__dos">
-                            Somos exploradores en busca de alimentos saludables, orgánicos, nutritivos y deliciosos que 
-                            promuevan un estilo de vida saludable sin privarnos de disfrutar la vida.
+                        Somos FIVE, ofrecemos productos de excelente
+                            calidad hechos por manos colombianas y con todo
 
-                            Nos motiva inspirar a las personas a cuidar de su salud a través de la alimentación mientras 
-                            disfrutan la vida descubriendo nuevos sabores y nuevas experiencias.
+                            el amor que nos caracteriza.
+
+                            Somos un emprendimiento dedicado a la
+                            elaboración de salsas artesanales y productos
+
+                            empacados al vacío.
                         </p>
 
                     </div>
