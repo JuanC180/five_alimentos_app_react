@@ -125,7 +125,7 @@ const Index = () => {
                       <div className="contenedor">
                           {/* <iframe className="section__iframe" src="https://www.youtube.com/embed/P8h3b_ICgSA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen=""></iframe> */}
                           {/* <iframe class="section__iframe" src="https://www.instagram.com/b6c48f3d-4db5-433d-b4f7-0beadc5f9dac" title="Instagram Embed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                          <video className="section__video__multimedia" muted autoplay   controls height="500px">
+                          <video className="section__video__multimedia" muted autoPlay controls height="500px">
                                   <source src={video2} type='video/mp4'></source>
                           </video>
 
