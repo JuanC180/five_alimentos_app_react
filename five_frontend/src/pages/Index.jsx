@@ -25,7 +25,7 @@ const Index = () => {
                   <div className="contenedor">
                       <div className="banner__contenedor">
                           <h1 className="banner__titulo"><span className="banner__five">Five</span> Alimentos Empacados</h1>
-                          <p className="banner__texto">Expertos en empacado y manipulado de productos alimentarios.</p>
+                          <p className="banner__texto">¡Listo para preparar y disfrutar en 5 minutos!</p>
                       </div>
                   </div>
               </div>

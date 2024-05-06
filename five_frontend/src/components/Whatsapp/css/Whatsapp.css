@@ -9,10 +9,12 @@
     position: fixed;
     bottom: 40px;
     right: 50px;
+    z-index: 20;
 }
 
 .tbn-whatsapp:hover{
     background-color: #1c723c;
+
 }
 
 .tbn-whatsapp__texto{}
@@ -23,6 +25,7 @@
     /* background-image: url(../img/whatsapp.svg); */
     background-image: url(../../assets/img/whatsapp.svg);
     background-size:cover;
+    z-index: 20;
 }
 
 .tbn-whatsapp__icono:hover{
