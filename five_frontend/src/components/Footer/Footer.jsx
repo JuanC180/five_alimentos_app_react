@@ -22,7 +22,6 @@ const Footer = () => {
                                 <div className="footer__descripcion--color">
                                     <p className="footer__descripcion__texto">Teléfono: +57 (310) 544 64 63</p>
                                     <p className="footer__descripcion__texto">Correo: fivecomidaalvacio@gmail.com</p>
-                                    {/* <p className="footer__descripcion__texto">Dirección: calle 7 sur 44 - 52</p> */}
                                     <p className="footer__descripcion__texto">Cuidad: Medellín</p>
                                 </div>
                             </div>

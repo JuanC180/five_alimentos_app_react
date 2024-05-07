@@ -122,7 +122,7 @@ const Contacto =  () => {
                 <div className="banner">
                     <div className="contenedor">
                         <div className="banner__contenedor">
-                            <h1 className="banner__titulo"><span className="banner__five">Five</span> Alimentos Empacados</h1>
+                            <h1 className="banner__titulo"><span className="banner__five">Contácto</span></h1>
                             <p className="banner__texto">Expertos en empacado y manipulado de productos alimentarios.</p>
                         </div>
                     </div>

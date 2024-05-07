@@ -5,10 +5,6 @@ import arrozImge from '../assets/img/bowl-food-solid.svg'
 import frazcoImge from '../assets/img/jar-solid.svg'
 import cubiertosImge from '../assets/img/utensils-solid.svg'
 
-import slider1 from '../assets/img/alimentos_empacados.jpg'
-import slider2 from '../assets/img/carne2.png'
-import slider3 from '../assets/img/presentacion_salsa2.png'
-
 import video2 from '../assets/img/fivevideo2.mp4'
 
 import '../assets/css/style.css'
@@ -18,7 +14,6 @@ const Index = () => {
     <>
         <Header/>
 
-            {/* <img src={svg} width="100"></img> */}
 
           <main>
               <div className="banner">
@@ -60,23 +55,7 @@ const Index = () => {
                 </div>
 
 
-                  {/* <div className="section__imagen__uno"></div>
-                  <div className="section__texto__uno">
-                    
-                      <div className="contenedor">
-                          <h2 className="section__texto__subtitulo__uno">
-                              Compra como un nutricionista
-                          </h2>
-                          <p className="section__texto__texto">
-                              Tener a mano estos alimentos no solo te ahorrará tiempo, 
-                              sino que harán que sea mucho más fácil comer los alimentos adecuados
 
-                              Comer bien no siempre es fácil o divertido. En el programa de televisión 'Consumer 101', 
-                              la experta de Consumer Reports, Amy Keating, se dirige a la tienda de comestibles para mostrarles 
-                              cómo tomar decisiones saludables cuando se trata de los alimentos.
-                          </p>
-                      </div>
-                  </div> */}
               </section>
 
               <section className="section__dos">
@@ -98,11 +77,9 @@ const Index = () => {
                           <img className='section__card__imagen' src={frazcoImge} width="100"></img>
                               {/* <div className="section__card__titulo">Titulo</div> */}
                               <div className="section__card__texto">
-                                  {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                  Inventore deserunt eius odio expedita labore molestias quaerat, 
-                                  beatae aut harum, architecto vitae reiciendis non! Iste quibusdam  */}
+
                                   Las salsas artesanales son una forma maravillosa de realzar tus comidas.
-                                  {/* Las salsas artesanales se elaboran con ingredientes frescos y de primera calidad, cuidadosamente seleccionados. */}
+                                 
                               </div>
                           </div>
 
@@ -124,15 +101,12 @@ const Index = () => {
 
                       <div className="contenedor">
                           {/* <iframe className="section__iframe" src="https://www.youtube.com/embed/P8h3b_ICgSA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen=""></iframe> */}
-                          {/* <iframe class="section__iframe" src="https://www.instagram.com/b6c48f3d-4db5-433d-b4f7-0beadc5f9dac" title="Instagram Embed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                    
                           <video className="section__video__multimedia" muted autoPlay controls height="500px">
                                   <source src={video2} type='video/mp4'></source>
                           </video>
 
-                        {/* <video  muted autoplay loop>
-                            <source src={video2} type="video/mp4"></source>
-                            Your browser does not support the video tag.
-                        </video> */}
+   
 
                       </div>
                   </div>
@@ -142,14 +116,7 @@ const Index = () => {
                           <h2 className="section__texto__subtitulo__multimedia">
                           Una merienda deliciosa para complementar tus tardes. <span className='section__texto__span'>¡preparada en un instante!</span>
                           </h2>
-                          <p className="section__texto__texto-multimedia">
-                              {/* Tener a mano estos alimentos no solo te ahorrará tiempo,  */}
-                              {/* sino que harán que sea mucho más fácil comer los alimentos adecuados. */}
-{/* 
-                              Comer bien no siempre es fácil o divertido. En el programa de televisión 'Consumer 101', 
-                              la experta de Consumer Reports, Amy Keating, se dirige a la tienda de comestibles para mostrarles 
-                              cómo tomar decisiones saludables cuando se trata de los alimentos. */}
-                          </p>
+                          <p className="section__texto__texto-multimedia"></p>
                       </div>
                   </div>
               </section>
