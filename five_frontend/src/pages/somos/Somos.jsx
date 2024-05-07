@@ -15,7 +15,7 @@ const Somos = () => {
                 <div className="contenedor">
                     <div className="banner__contenedor">
                         <h1 className="banner__titulo"><span className="banner__five">Five</span> Alimentos Empacados</h1>
-                        <p className="banner__texto">Expertos en empacado y manipulado de productos alimentarios.</p>
+                        <p className="banner__texto"></p>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const Somos = () => {
                             Misión
                         </h2>
                         <p className="mision__texto__texto__uno">
-                        Nos dedicamos a satisfacer las necesidades gastronómicas con una amplia oferta con un concepto de comida empacada para una preparación rápida y fácil. Y fabricación de salsas de manera artesanal  con el fin de hacerle la cocina más fácil a nuestros clientes  y a través de ella transmitir una experiencia única.
+                        Nos dedicamos a satisfacer las necesidades gastronómicas con una amplia oferta con un concepto de comida empacada para una preparación rápida y fácil. Fabricamos de salsas de manera artesanal con el fin de hacerle la cocina más fácil a nuestros clientes  y a través de ella transmitir una experiencia única.
                         </p>
                         </div>
                     </div>
@@ -64,8 +64,9 @@ const Somos = () => {
                             Visión
                         </h2>
                         <p className="mision__texto__texto__tres">
-                        Movernos hacia un futuro en el sector alimentos llevando una experiencia deliciosa e innovadora con productos de alta calidad, nutritivos aumentando así el consumo y preferencia de nuestros clientes creando así una manera fácil de alimentarse.
-                        Queriendo cada día mejorar para poder expandir la empresa no solo a nivel regional sino nacional logrando cautivar cada vez el mercado de una manera innovadora.
+                        Movernos hacia un futuro en el sector de alimentos, ofreciendo una experiencia deliciosa e innovadora con productos de alta calidad y nutritivos, con el objetivo de aumentar el consumo y la preferencia de nuestros clientes. Esto nos permitirá crear una forma más fácil de alimentarse.
+
+Nos esforzamos cada día por mejorar, con la meta de expandir la empresa no solo a nivel regional, sino también nacional, cautivando de manera innovadora a un mercado cada vez más amplio.
 
 
                         </p>
