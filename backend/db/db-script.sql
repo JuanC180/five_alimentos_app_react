@@ -2,9 +2,9 @@ CREATE DATABASE five_alimentos_db
 
 CREATE TABLE contacto(
     id int PRIMARY KEY AUTO_INCREMENT,
-    nombres varchar(80),
-    correo varchar(80),
-    telefono varchar(12),
+    nombres varchar(80) NOT NULL,
+    correo varchar(80) NOT NULL,
+    telefono varchar(10) NOT NULL,
     comentario varchar (200)
 )
 
