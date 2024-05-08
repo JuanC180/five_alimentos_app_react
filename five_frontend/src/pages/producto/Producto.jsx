@@ -302,11 +302,10 @@ const handleButtonSubtract=(category,index)=>{
 
       
         <main>
-              <div className="banner">
-                  <div className="contenedor">
+              <div className="bannerx">
+                  <div className="contenedorx">
                       <div className="banner__contenedor">
-                          <h1 className="banner__titulo"><span className="banner__five">Five</span> Alimentos Empacados</h1>
-                          <p className="banner__texto">¡Variedad de productos disponibles!</p>
+                          <h1 className="banner__titulox"> PRODUCTOS</h1>
                       </div>
                   </div>
               </div>

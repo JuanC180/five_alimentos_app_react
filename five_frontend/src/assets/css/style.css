@@ -172,6 +172,11 @@ body{
 
 .section__video__multimedia{
     width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.551);
+    padding: 1rem;
+    /* border: 2px solid rgba(125, 125, 125, 0.506);
+    padding: 10px 0; */
 }
 
 .section__texto__subtitulo__multimedia{

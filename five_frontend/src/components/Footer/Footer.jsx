@@ -28,13 +28,13 @@ const Footer = () => {
                         </div>
                         <div className="footer__iconos">
                             <a href="#">
-                                {/* <img className="footer__iconos--width" src={logoFacebook} alt="logo-facebook" /> */}
+                                <img className="footer__iconos--width" src={logoFacebook} alt="logo-facebook" />
                             </a>
                             <a href="https://www.instagram.com/five_comidaempacada" target='_blank'>
                                 <img className="footer__iconos--width" src={logoInstagram} alt="logo-instagram" />
                             </a>
                             <a href="#">
-                                {/* <img className="footer__iconos--width" src={logoX} alt="logo-x" /> */}
+                                <img className="footer__iconos--width" src={logoX} alt="logo-x" />
                             </a>
                         </div>
                     </div>

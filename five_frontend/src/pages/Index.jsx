@@ -8,7 +8,7 @@ import cubiertosImge from '../assets/img/utensils-solid.svg'
 import video2 from '../assets/img/fivevideo2.mp4'
 
 import '../assets/css/style.css'
-
+import '../components/Header/css/Header.css'
 const Index = () => {
   return (
     <>

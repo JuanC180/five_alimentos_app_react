@@ -10,17 +10,6 @@ const Somos = () => {
         
 
         <main>
-            <div className="banner">
-
-                <div className="contenedor">
-                    <div className="banner__contenedor">
-                        <h1 className="banner__titulo"><span className="banner__five">Five</span> Alimentos Empacados</h1>
-                        <p className="banner__texto"></p>
-                    </div>
-                </div>
-            </div>
-
-
             <section className="mision__dos">
                
                 <div className="mision__texto__dos">

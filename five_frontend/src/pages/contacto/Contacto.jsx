@@ -119,14 +119,6 @@ const Contacto =  () => {
 
 
             <main>
-                <div className="banner">
-                    <div className="contenedor">
-                        <div className="banner__contenedor">
-                            <h1 className="banner__titulo"><span className="banner__five">Contácto</span></h1>
-                            <p className="banner__texto">Expertos en empacado y manipulado de productos alimentarios.</p>
-                        </div>
-                    </div>
-                </div>
 
                 <section className="section__contacto">
                     <h2 className="section__contacto__titulo-principal">Contáctanos</h2>
