@@ -33,6 +33,16 @@ const Contacto =  () => {
               });
             return
         }
+        if(telefono.length < 10) {
+            console.log("El número de teléfono debe tener al menos 10 dígitos.")
+    
+            swal({
+                title: "El número de teléfono debe tener al menos 10 dígitos!",
+                icon: "warning",
+                button: "Aceptar"
+            });
+            return
+        }
         // console.log("Enviando datos")
 
         // const url = 'http://127.0.0.1:4000/api/v1/contactos'
