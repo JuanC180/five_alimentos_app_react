@@ -342,13 +342,13 @@ const handleButtonSubtract=(category,index)=>{
                                 <ProductCard key={index} product={product} onAdd={()=> handleButtonAdd('salsas',index)} onSub={()=> handleButtonSubtract('salsas',index)}/>
                             ))}
                       </div>
-                      <h1 className='large'>Pasteles crudos</h1>
+                      <h1 className='large'>Pasteles Crudos</h1>
                       <div className='contenedor_cards'id='pasteles_crudos'>
                             {products.pastelesCrudos.map((product, index) => (
                                 <ProductCard key={index} product={product} onAdd={()=> handleButtonAdd('pastelesCrudos',index)} onSub={()=> handleButtonSubtract('salsas',index)}/>
                             ))}
                       </div>
-                      <h1 className='large'>Pasteleshorneados</h1>
+                      <h1 className='large'>Pasteles Horneados</h1>
                       <div className='contenedor_cards' id='pasteles_horneados'>
                             {products.pastelesHorneados.map((product, index) => (
                                 <ProductCard key={index} product={product} onAdd={()=> handleButtonAdd('pastelesHorneados',index)} onSub={()=> handleButtonSubtract('salsas',index)}/>

@@ -138,7 +138,7 @@ const Contacto =  () => {
                                         id="nombre" 
                                         placeholder="Nombres" 
                                         value={nombre}
-                                        onChange={e => setNombre(e.target.value)}
+                                        onChange={e => { const val = e.target.value.replace(/[^A-Za-z]/g,'');setNombre(val);}}
                                     />
                                 </div>
                                 <div className="div-c">
@@ -153,12 +153,16 @@ const Contacto =  () => {
                                 </div>
                                 <div className="div-c">
                                     <input required
-                                        type="number" 
+                                        type="text" 
                                         className="input-c" 
                                         id="telefono" 
+                                        minLength="10"
+                                        maxLength="10"
+                                        pattern="\d*"
                                         placeholder="Teléfono" 
                                         value={telefono}
-                                        onChange={e => setTelefono(e.target.value)}
+                                        onChange={e =>{
+                                            const val= e.target.value.replace(/\D/g, '');if (val.length<=10){setTelefono(val)}}}
                                     />
                                 </div>
                                 <div className="div-c">
