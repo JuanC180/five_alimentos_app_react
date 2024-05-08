@@ -4,7 +4,7 @@ import { db } from "../db/database.js";
 const allItems = () => {
     return new Promise((resolve, reject) => {
 
-      db.query('SELECT * FROM contactos', (error, results, fields) => {
+      db.query('SELECT * FROM contacto', (error, results, fields) => {
         if (error) {
           reject(error);
         } else {
@@ -24,7 +24,7 @@ const allItems = () => {
     const {nombre, correo, telefono, comentario} = datos
 
     return new Promise((resolve, reject) => {
-        db.query(`INSERT INTO contactos (nombres, correo, telefono, comentario) VALUES ('${nombre}', '${correo}', '${telefono}', '${comentario}')`, 
+        db.query(`INSERT INTO contacto (nombres, correo, telefono, comentario) VALUES ('${nombre}', '${correo}', '${telefono}', '${comentario}')`, 
         (error, results, fields) => {
             if(error){
                 reject(error)
