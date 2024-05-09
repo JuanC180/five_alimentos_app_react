@@ -449,6 +449,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        background-position-y: 28%;
         height: 550px;
         position: relative;
         overflow: hidden;
