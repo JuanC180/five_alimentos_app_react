@@ -20,9 +20,11 @@ const Footer = () => {
                             </div>
                             <div className="footer__texto">
                                 <div className="footer__descripcion--color">
-                                    <p className="footer__descripcion__texto">Teléfono: +57 (310) 544 64 63</p>
+                                    <p className="footer__descripcion__texto">Teléfono: +57  (313) 5955148</p>
                                     <p className="footer__descripcion__texto">Correo: fivecomidaalvacio@gmail.com</p>
+                                    <p className='footer__descripcion__texto'>Dirección: Cra 49 # 137 sur - 87 (Barrios Unidos)</p>
                                     <p className="footer__descripcion__texto">Cuidad: Medellín</p>
+                                     
                                 </div>
                             </div>
                         </div>

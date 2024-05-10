@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
     const {img,title,quantity,description,price} = product;
     const [productQuantity, setProductQuantity] = useState(product.quantity);
     const handleButtonClick = () => {
-        const whatsappUrl = `https://wa.me/3143922490?text=Estoy%20interesado%20en%20:%20${productQuantity}%20*_${title}_*%20*-*%20Valor%20total%20de%20la%20compra:%20*$${price*productQuantity}*`;
+        const whatsappUrl = `https://api.whatsapp.com/send/?phone=573105446463&text=Estoy%20interesado%20en%20:%20${productQuantity}%20*_${title}_*%20*-*%20Valor%20total%20de%20la%20compra:%20*$${price*productQuantity}*&type=phone_number&app_absent=0`;
         window.open(whatsappUrl, '_blank');
     };
 

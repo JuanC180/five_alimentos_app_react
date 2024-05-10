@@ -122,7 +122,7 @@ const Index = () => {
               </section>
 
               <div className="tbn-whatsapp">
-                  <a href="https://api.whatsapp.com/send/?phone=573153646529&text=Holaa estoy interezado en el producto&type=phone_number&app_absent=0" target="_blank">
+                  <a href="https://api.whatsapp.com/send/?phone=573105446463&text=¡Hola! Estoy interesado en conocer más sobre Five Alimentos Empacados&type=phone_number&app_absent=0" target="_blank">
                       <div className="tbn-whatsapp__icono "></div>
                   </a>
               </div>

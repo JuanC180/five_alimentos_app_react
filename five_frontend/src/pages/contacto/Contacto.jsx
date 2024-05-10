@@ -5,12 +5,7 @@ import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 // import '../../assets/css/bootstrap.min.css'
 import '../contacto/css/contacto.css'
-
-let texto = `H\no\nl\na`;
-let textoConSaltosDeLinea = encodeURIComponent(texto.replace(/\n/g, '%20A'));
-let imagen = "https://img.freepik.com/foto-gratis/colores-arremolinados-interactuan-danza-fluida-sobre-lienzo-que-muestra-tonos-vibrantes-patrones-dinamicos-que-capturan-caos-belleza-arte-abstracto_157027-2892.jpg"
-let urlImagenCodificada = encodeURIComponent(imagen);
-const mensajeW = `https://api.whatsapp.com/send/?phone=573143922490&text=${textoConSaltosDeLinea} ${urlImagenCodificada} estoy interezado en el  *producto*&type=phone_number&app_absent=0`
+const mensajeW = `https://api.whatsapp.com/send/?phone=573105446463&text=¡Hola! Estoy interesado en conocer más sobre Five Alimentos Empacados&type=phone_number&app_absent=0`
 const Contacto =  () => {
     
     const [nombre, setNombre]         = useState('')
@@ -142,14 +137,23 @@ const Contacto =  () => {
                                 onSubmit={handleSubmit}
                             >
                                 <div className="div-c">
-                                    <input required
-                                        type="text" 
-                                        className="input-c" 
-                                        id="nombre" 
-                                        placeholder="Nombres" 
-                                        value={nombre}
-                                        onChange={e => { const val = e.target.value.replace(/[^A-Za-z]/g,'');setNombre(val);}}
-                                    />
+                                <input 
+                                    
+                                    type="text" 
+                                    className="input-c" 
+                                    id="nombre" 
+                                    placeholder="Nombres" 
+                                    value={nombre}
+                                    onChange={e => {
+                                        const val = e.target.value;
+                                        const regex = /^[A-Za-z\s]*$/;
+                                      //  const regex = /^[A-Za-z\s]+(?:\s[A-Za-z]+)*$/; /^[A-Za-z\s]*$/
+                                        console.log(val);
+                                        if (val === '' || regex.test(val)) {
+                                            setNombre(val);
+                                        }
+                                    }}
+                                />
                                 </div>
                                 <div className="div-c">
                                     <input required
