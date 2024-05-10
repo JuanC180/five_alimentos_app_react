@@ -148,7 +148,11 @@ const Contacto =  () => {
                                         id="nombre" 
                                         placeholder="Nombres" 
                                         value={nombre}
-                                        onChange={e => { const val = e.target.value.replace(/[^A-Za-z]/g,'');setNombre(val);}}
+                                        onChange={e => { 
+                                            const inputValue = e.target.value;
+                                            const formattedValue = inputValue.replace(/\s+/g, ' ');
+                                            setNombre(formattedValue)
+                                            }}
                                     />
                                 </div>
                                 <div className="div-c">

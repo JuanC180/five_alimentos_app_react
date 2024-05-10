@@ -59,7 +59,7 @@ const Header = () => {
                                 <NavLink className={({isActive})=> isActive ? 'nav__item--active' : ''}  aria-label="" to="/somos">Quienes Somos</NavLink>
                                 </li>
                                 <li className="nav__item">
-                                <NavLink className={({isActive})=> isActive ? 'nav__item--active' : ''}  aria-label="" to="/contacto">Contácto</NavLink>
+                                <NavLink className={({isActive})=> isActive ? 'nav__item--active' : ''}  aria-label="" to="/contacto">Contacto</NavLink>
                                 </li>
                             </ul>
                         </div>
