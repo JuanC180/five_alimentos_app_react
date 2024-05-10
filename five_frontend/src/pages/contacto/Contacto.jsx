@@ -137,23 +137,18 @@ const Contacto =  () => {
                                 onSubmit={handleSubmit}
                             >
                                 <div className="div-c">
-                                <input 
-                                    
-                                    type="text" 
-                                    className="input-c" 
-                                    id="nombre" 
-                                    placeholder="Nombres" 
-                                    value={nombre}
-                                    onChange={e => {
-                                        const val = e.target.value;
-                                        const regex = /^[A-Za-z\s]*$/;
-                                      //  const regex = /^[A-Za-z\s]+(?:\s[A-Za-z]+)*$/; /^[A-Za-z\s]*$/
-                                        console.log(val);
-                                        if (val === '' || regex.test(val)) {
-                                            setNombre(val);
-                                        }
-                                    }}
-                                />
+                                    <input required
+                                        type="text" 
+                                        className="input-c" 
+                                        id="nombre" 
+                                        placeholder="Nombres" 
+                                        value={nombre}
+                                        onChange={e => { 
+                                            const inputValue = e.target.value;
+                                            const formattedValue = inputValue.replace(/\s+/g, ' ');
+                                            setNombre(formattedValue)
+                                            }}
+                                    />
                                 </div>
                                 <div className="div-c">
                                     <input required
