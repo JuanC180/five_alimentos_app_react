@@ -116,6 +116,10 @@
         font-size: 20px;
         font-family: var(--fuente-secundaria);
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
     .nav__item a:hover{
 
