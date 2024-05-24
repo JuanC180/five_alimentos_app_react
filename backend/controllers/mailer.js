@@ -23,7 +23,7 @@ export const sendContactEmail = (nombre, correo, telefono, comentario) => {
   console.log('HTML generado:', htmlContent);
   const mailOptions = {
     from: 'notificacionesfive@gmail.com', 
-    to: 'velasquito23@gmail.com',
+    to: 'fivecomidaalvacio@gmail.com',
     subject: 'Nuevo mensaje de contacto ',
     html: htmlContent
   };
