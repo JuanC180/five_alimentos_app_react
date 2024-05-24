@@ -5,6 +5,7 @@
     align-content: center;
     background-color: #003a1520;
     padding: 2rem 0;
+    padding-top: 150px;
 
 }
 .section__contacto__contenedor{
@@ -37,7 +38,7 @@
 .section__contacto__imagen{
     background-image: url(../../../assets/img/imagenesfive/five4.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:  100% 100%;
     background-position: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

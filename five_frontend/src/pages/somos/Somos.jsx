@@ -15,7 +15,7 @@ const Somos = () => {
                 <div className="mision__texto__dos">
                     <div className="contenedor1">
                         <h2 className="mision__texto__subtitulo__dos">
-                            ¿Quienes somos?
+                            ¿Quiénes somos?
                         </h2>
                         <p className="mision__texto__texto__dos">
                         Somos FIVE, ofrecemos productos de excelente

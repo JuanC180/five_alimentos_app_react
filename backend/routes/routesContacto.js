@@ -1,5 +1,5 @@
 import express from 'express'
-
+import { handleContactForm } from '../controllers/controllerContacto.js';
 import { 
         getContacto, 
         addContacto,
@@ -12,6 +12,7 @@ const router = express.Router();
 router.get('/contactos', getContacto)
 router.get('/contactos/:id', getContactoOne)
 router.post('/contactos', addContacto)
+router.post('/contact', handleContactForm)
 
 
 

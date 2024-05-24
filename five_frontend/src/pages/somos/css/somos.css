@@ -395,6 +395,7 @@
         box-shadow: 0px 0px 20px rgba(138, 138, 138, 0.822);
         z-index: -1;
         height: 20;
+        padding-top: 80px;
     }
     .mision__texto__dos{
         display: flex;

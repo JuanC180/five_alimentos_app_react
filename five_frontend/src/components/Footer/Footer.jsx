@@ -11,10 +11,13 @@ const Footer = () => {
     <>
         <div className='wrapp'>
             <footer className="footer">
+            
                 <div className="contenedor">
+                
                     
                     <div className="footer__contenedor">
                         <div className="footer__informacion">
+                        
                             <div className="footer__logo">
                                 <img className="footer__logo__img" src={logoFooter} alt="logo-footer" />
                             </div>
@@ -23,24 +26,33 @@ const Footer = () => {
                                     <p className="footer__descripcion__texto">Teléfono: +57  (313) 5955148</p>
                                     <p className="footer__descripcion__texto">Correo: fivecomidaalvacio@gmail.com</p>
                                     <p className='footer__descripcion__texto'>Dirección: Cra 49 # 137 sur - 87 (Barrios Unidos)</p>
-                                    <p className="footer__descripcion__texto">Cuidad: Medellín</p>
+                                    <p className="footer__descripcion__texto">Cuidad: Caldas - Antioquia</p>
                                      
                                 </div>
                             </div>
                         </div>
                         <div className="footer__iconos">
-                            <a href="#">
-                                <img className="footer__iconos--width" src={logoFacebook} alt="logo-facebook" />
-                            </a>
-                            <a href="https://www.instagram.com/five_comidaempacada" target='_blank'>
+                            <a href="https://www.instagram.com/fivecafebar" target='_blank'>
                                 <img className="footer__iconos--width" src={logoInstagram} alt="logo-instagram" />
                             </a>
-                            <a href="#">
-                                <img className="footer__iconos--width" src={logoX} alt="logo-x" />
-                            </a>
                         </div>
+                        
                     </div>
-                    <p className="footer__copyright">© 2024 - Todos los derechos reservados</p>
+                    <div className='footer__final'>
+                    
+                    
+                    </div>
+
+                     <div className='footer__copyright-sena'>
+                        <div className='footer__img'></div>
+                        <div>
+                            <p className='footer__copyright'>
+                                Página web informativa desarrollada por la fábrica de Software de la Unidad de Servicios Tecnológicos SENA
+                                Para mayor información contacta serviciotecnologico@sena.edu.co 
+                            </p>
+                           <p className="footer__copyright2"><br />© 2024 - Todos los derechos reservados</p>
+                        </div>
+                    </div> 
                 </div>
             </footer>
         </div>
